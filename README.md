@@ -1,4 +1,4 @@
-# p01
+# P01
 Repository to manage issues related to the BODC P01 Vocabulary.
 
 Title: BODC Parameter Usage Vocabulary
