@@ -1,10 +1,93 @@
-# P01
-Repository to manage issues related to the BODC P01 Vocabulary.
+This is a repository for sharing and managing issues related to the BODC P01 Parameter Usage Vocabulary (PUV).
 
-Title: BODC Parameter Usage Vocabulary
+Below is a short introduction to the BODC PUV and its semantic model, along with some guidelines for searching the P01 PUV, and information about how to contribute.
 
-Definition: Terms built using the BODC parameter semantic model designed to describe individual measured phenomena.  May be used to mark up sets of data such as a NetCDF array or spreadsheet column.
+# The BODC Parameter Usage Vocabulary (PUV) and its semantic model
 
-Governance: British Oceanographic Data Centre
+## What is it?
+
+The BODC PUV is a **controlled vocabulary** for labelling scientific variables in databases and data files. It is a collection of unique and persistent identifiers attached to structurally logical labels and textual definitions.
+
+It is a SKOS (Simple Knowledge Organisation System) controlled vocabulary. This means that its structure is compliant with SKOS, a W3C recommendation for the representation of knowledge in a format understandable to computers. Each entry in P01 is associated with a 8-byte parameter code, a preferred label, an alternative label, a definition field, and a status (accepted or deprecated). Each label is time-stamped with its creation date and its last modified date. All intermediate versions are saved and are accessible from the publicly available record. A term is never deleted but can be made obsolete by deprecation.
+
+One important feature of the BODC PUV is that it is based on a **semantic model**. The semantic model allows us to create complex information-rich labels that are syntactically and semantically consistent. [This presentation](https://github.com/nvs-vocabs/P01/blob/master/The_BODC_P01_PUV_semantic_model_Aug2019.pdf) explains how the semantic model works.
+
+## How can I access it?
+
+The P01 PUV is a very large collection containing over 40,000 terms. It can be searched or browsed using the following tools
+
+- [The BODC Vocabulary Search Interface](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/p01/)
+
+- [The SeaDataNet semantic component facet search](http://seadatanet.maris2.nl/bandit/browse_step.php)
+
+- [The SeaDataNet parameter thesaurus](http://seadatanet.maris2.nl/v_bodc_vocab_v2/vocab_relations.asp?lib=P08)
+
+It can be downloaded in its entirety (i.e. including deprecated concepts) as an [RDF file](http://vocab.nerc.ac.uk/collection/P01). The file also contains links between P01 concepts and concepts from other semantic resources including the semantic elements used to construct the preferred label, units of measurements from BODC's units of measurement vocabulary (P06), broader discovery terms from the SeaDataNet Parameter Discovery Vocabulary (P02) and, when needed, concepts from other related semantic resources. At the time of writing, some 300,000 mappings are present in the file.
+
+For users with knowledge of SPARQL, the P01 and its mappings can also be searched via the [NVS SPARQL endpoint](vocab.nerc.ac.uk/sparql/).
+
+## How can I find P01 codes for my data?
+
+Remember that a P01 label is always constructed by the following association of concepts:
+
+|The property or attribute | 'of' | an object of interest | in relation to | an environmental matrix | 'by' | a method (optional)|
+|--------------------------|------|-----------------------|----------------|-------------------------|------|--------------------|
+
+
+All the fields apart from 'of' and 'by' are populated from NVS controlled vocabularies (see [this diagram](https://github.com/nvs-vocabs/P01/blob/master/P01_wheel.pdf) for simple visualisation or download it to use as a tool for quick access to the semantic components of a P01 concept).
+
+The "property" (or "attribute") must be associated with either an object of interest or a matrix or both.
+
+The "object of interest" can be a chemical object, a biological object, a physical phenomenon, or a material object. 
+
+When looking for codes the key questions are:
+
+1. **What are the properties measured or observed**?
+What kind of properties are they? Concentrations? Abundances? Temperature? Uptake rates? pH?
+
+2. **What are the objects of interest**? 
+Are they chemical substances? biological organisms? material objects? physical phenomena? none of these?
+
+Note that if the property is the property of the environment under study (e.g. "pH of the water body" or "Temperature of the atmosphere") then the object of interest is the environmental matrix and the field "object of interest" can be ignored.
+
+3. **What is the environmental matrix**?
+- Do I need one? You will for most environmental measurements.
+- Why? This is to remove any ambiguity about what the value reported relates to.
+- Take for example "Concentration of cadmium" - This is an ambiguous label if used to define a variable because it does not say concentration of cadmium in what? In the sediment? a water body? the atmosphere? a biological organism? If the former was it in the liquid phase or attached to particles? If the latter was it in the whole organism or one of its organs? 
+- If the measurement relates to a water body or the atmosphere one needs to ask: Was the sample filtered? If it were, then the filter type or filter size is an important information to be stored close to the measurement value. In the P01 semantic model this is captured as part of the matrix definition. 
+
+For example, when a dissolved quantity is measured in a water body, we apply the following rules
+
+- Use "water body [dissolved plus reactive particulate phase]" if the sample was not filtered
+
+- Use "water body [dissolved plus reactive particulate <GF/F phase]" if the sample was filtered through GF/F filter
+
+- Use "water body [dissolved plus reactive particulate <0.4/0.45um phase]" if the sample was filtered through a 0.4/0.45 um membrane
+
+- Use "water body [dissolved plus reactive particulate <unknown phase]" if the sample was filtered but the filter type is unknown.
+
+
+4. **Do I need to specify the method?**
+- This can be important for some measurements or if one wants to distinguish between quantities measured using different methods
+
+- The method is specified to avoid ambiguity and minimise the need to refer to free-text documentation
+
+- It can help with automated data compilation and aggregation and decrease the risk of data being misinterpreted
+
+Take for example, chlorophyll-a. The output from an in situ fluorometer is often labelled as "Concentration of chlorophyll-a". However the values cannot be guaranteed to be an accurate representation of the real amount of chlorophyll-a in a water body without access to textual information about the method and knowing whether the data have been validated against chlorophyll-a measured by filtration, extracted in a solvent and analysed using either HPLC, fluorometry or photometric methods. Most users would require that an automated search of chlorophyll-a data be able to distinguish between these different methods. The P01 semantic model is built so that this information can be captured in the parameter code.
+
+### Examples
+Some examples are being compiled and will be provided shortly
+
+## How can I contribute?
+- New P01 codes based on combinations of existing concepts can be submitted via the [BODC Vocabulary Builder](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_builder/) following registration and login 
+
+- New compound matrices and biological entities can also be submitted using the BODC Vocabulary Builder.
+
+- Requests for new concepts that require community review should be submitted as issues in this repository (or emailed to vocab.services@bodc.ac.uk if you do not have access to github)
+
+- Reporting errors or suggestions for improving content or mappings can also be submitted as issues in this repository or emailed to vocab.services@bodc.ac.uk. 
+
+- New terms for the P01 semantic model component vocabularies (for example a new matrix or a new property) can be made here or under the relevant github repository (e.g. https://github.com/nvs-vocabs/S06/issues for a new property term). They can also be made via the BODC Vocabulary Builder as part of a new term request.
 
 Notice 2018/03/19: The P01 vocabulary is currently undergoing remodelling of some of its semantic elements. The meaning of the concepts will never be changed however users may notice some changes to the structure or to the wording of the preferred label. Please report any issues of concern by opening an issue ticket in this repository or email vocab.services@bodc.ac.uk.
