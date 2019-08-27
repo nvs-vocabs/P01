@@ -28,13 +28,13 @@ For users with knowledge of SPARQL, the P01 and its mappings can also be searche
 
 ## How can I find P01 codes for my data?
 
-Remember that a P01 label is always constructed by the following association of concepts:
+Remember that a P01 label is always constructed from the following association of concepts:
 
 |The property or attribute | 'of' | an object of interest | in relation to | an environmental matrix | 'by' | a method (optional)|
 |--------------------------|------|-----------------------|----------------|-------------------------|------|--------------------|
 
 
-All the fields apart from 'of' and 'by' are populated from NVS controlled vocabularies (see [this diagram](https://github.com/nvs-vocabs/P01/blob/master/P01_wheel.pdf) for simple visualisation or download it to use as a tool for quick access to the semantic components of a P01 concept).
+All fields apart from 'of' and 'by' are populated from NVS controlled vocabularies (see [this diagram](https://github.com/nvs-vocabs/P01/blob/master/P01_wheel.pdf) for simple visualisation or download it to use as a tool for quick access to the semantic components of a P01 concept).
 
 The "property" (or "attribute") must be associated with either an object of interest or a matrix or both.
 
