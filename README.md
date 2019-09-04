@@ -91,3 +91,19 @@ Some examples are being compiled and will be provided shortly
 - New terms for the P01 semantic model component vocabularies (for example a new matrix or a new property) can be made here or under the relevant github repository (e.g. https://github.com/nvs-vocabs/S06/issues for a new property term). They can also be made via the BODC Vocabulary Builder as part of a new term request.
 
 Notice 2018/03/19: The P01 vocabulary is currently undergoing remodelling of some of its semantic elements. The meaning of the concepts will never be changed however users may notice some changes to the structure or to the wording of the preferred label. Please report any issues of concern by opening an issue ticket in this repository or email vocab.services@bodc.ac.uk.
+
+Quick access to semantic model components
+
+| S06 | Parameter entity | [github repo](https://github.com/nvs-vocabs/S06/) | [Search](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/S06/) | [NVS](http://vocab.nerc.ac.uk/collection/S06/current/) |
+| S07 |
+| S27 |
+| S25 |
+| S29 |
+| S02 |
+| S21 |
+| S22 |
+| S23 |
+| S24 |
+| S03 |
+| S04 |
+| S05 |
