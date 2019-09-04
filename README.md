@@ -92,18 +92,8 @@ Some examples are being compiled and will be provided shortly
 
 Notice 2018/03/19: The P01 vocabulary is currently undergoing remodelling of some of its semantic elements. The meaning of the concepts will never be changed however users may notice some changes to the structure or to the wording of the preferred label. Please report any issues of concern by opening an issue ticket in this repository or email vocab.services@bodc.ac.uk.
 
-Quick access to semantic model components
+Quick link to semantic model component repositories
 
-| S06 | Parameter entity | [github repo](https://github.com/nvs-vocabs/S06/) | [Search](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/S06/) | [NVS](http://vocab.nerc.ac.uk/collection/S06/current/) |
-| S07 |
-| S27 |
-| S25 |
-| S29 |
-| S02 |
-| S21 |
-| S22 |
-| S23 |
-| S24 |
-| S03 |
-| S04 |
-| S05 |
+| Properties | Statistical terms | Chemical entities | Biological entities | Physical entities | Measurement-matrix relationships | Matrices | Sample preparation methods | Analytical methods | Data processing methods |
+|-------|-------|-------|-------|-------|-------|------|-------|-------|-------|
+| [S06](https://github.com/nvs-vocabs/S06/) | [S07](https://github.com/nvs-vocabs/S07/) | [S27](https://github.com/nvs-vocabs/S27/) | [S25](https://github.com/nvs-vocabs/S25/) |[S29](https://github.com/nvs-vocabs/S29/)|[S02](https://github.com/nvs-vocabs/S02/) | [S26](https://github.com/nvs-vocabs/S26/) | [S03](https://github.com/nvs-vocabs/S23/)| [S04](https://github.com/nvs-vocabs/S04/)|[S05](https://github.com/nvs-vocabs/S05/)|
