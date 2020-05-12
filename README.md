@@ -92,7 +92,7 @@ Some examples are being compiled and will be provided shortly
 
 Notice 2018/03/19: The P01 vocabulary is currently undergoing remodelling of some of its semantic elements. The meaning of the concepts will never be changed however users may notice some changes to the structure or to the wording of the preferred label. Please report any issues of concern by opening an issue ticket in this repository or email vocab.services@bodc.ac.uk.
 
-Quick link to semantic model component repositories
+Quick links to the semantic model component repositories in github/nvs-vocabs:
 
 | Properties | Statistical terms | Chemical entities | Biological entities | Physical entities | Measurement-matrix relationships | Matrices | Sample preparation methods | Analytical methods | Data processing methods |
 |-------|-------|-------|-------|-------|-------|------|-------|-------|-------|
