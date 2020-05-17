@@ -84,13 +84,13 @@ Some examples are being compiled and will be provided shortly
 
 - New compound matrices and biological entities can also be submitted using the BODC Vocabulary Builder.
 
-- Requests for new concepts that require community review should be submitted as issues in this repository (or emailed to vocab.services@bodc.ac.uk if you do not have access to github)
+- Requests for new concepts that require community review should be submitted as issues in this repository (or emailed to vocab.services -at- bodc.ac.uk if you do not have access to github)
 
-- Reporting errors or suggestions for improving content or mappings can also be submitted as issues in this repository or emailed to vocab.services@bodc.ac.uk. 
+- Reporting errors or suggestions for improving content or mappings can also be submitted as issues in this repository or emailed to vocab.services -at- bodc.ac.uk. 
 
 - New terms for the P01 semantic model component vocabularies (for example a new matrix or a new property) can be made here or under the relevant github repository (e.g. https://github.com/nvs-vocabs/S06/issues for a new property term). They can also be made via the BODC Vocabulary Builder as part of a new term request.
 
-Notice 2018/03/19: The P01 vocabulary is currently undergoing remodelling of some of its semantic elements. The meaning of the concepts will never be changed however users may notice some changes to the structure or to the wording of the preferred label. Please report any issues of concern by opening an issue ticket in this repository or email vocab.services@bodc.ac.uk.
+Notice 2018/03/19: The P01 vocabulary is currently undergoing remodelling of some of its semantic elements. The meaning of the concepts will never be changed however users may notice some changes to the structure or to the wording of the preferred label. Please report any issues of concern by opening an issue ticket in this repository or email vocab.services -at- bodc.ac.uk.
 
 Quick links to the semantic model component repositories in github/nvs-vocabs:
 
