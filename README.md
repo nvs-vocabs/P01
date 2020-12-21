@@ -14,15 +14,15 @@ One important feature of the BODC PUV is that it is based on a **semantic model*
 
 ## How can I access it?
 
-The P01 PUV is a very large collection containing over 40,000 terms. It can be searched or browsed using the following tools
+The P01 PUV is a very large collection containing over 40,000 terms. It can be accessed via the NERC Vocabulary Server (NVS) [here](http://vocab.nerc.ac.uk/collection/P01) and  it can be searched or browsed using the following tools
 
-- [The BODC Vocabulary Search Interface](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/p01/)
+- [The BODC Vocabulary Search Interface](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P01/)
 
 - [The SeaDataNet semantic component facet search](http://seadatanet.maris2.nl/bandit/browse_step.php)
 
 - [The SeaDataNet parameter thesaurus](http://seadatanet.maris2.nl/v_bodc_vocab_v2/vocab_relations.asp?lib=P08)
 
-It can be downloaded in its entirety (i.e. including deprecated concepts) as an [RDF file](http://vocab.nerc.ac.uk/collection/P01). The file also contains links between P01 concepts and concepts from other semantic resources including the semantic elements used to construct the preferred label, units of measurements from BODC's units of measurement vocabulary (P06), broader discovery terms from the SeaDataNet Parameter Discovery Vocabulary (P02) and, when needed, concepts from other related semantic resources. At the time of writing, some 300,000 mappings are present in the file.
+Each P01 concept is mapped to the semantic elements used to construct the preferred label (see below) as well as a unit of measurement from the BODC's units of measurement vocabulary (P06), a broader discovery term from the SeaDataNet Parameter Discovery Vocabulary (P02) and, when applicable, concepts from other related semantic resources.
 
 For users with knowledge of SPARQL, the P01 and its mappings can also be searched via the [NVS SPARQL endpoint](https://vocab.nerc.ac.uk/sparql/).
 
@@ -94,6 +94,8 @@ Notice 2018/03/19: The P01 vocabulary is currently undergoing remodelling of som
 
 Quick links to the semantic model component repositories in github/nvs-vocabs:
 
-| Properties | Statistical terms | Chemical entities | Biological entities | Physical entities | Measurement-matrix relationships | Matrices | Sample preparation methods | Analytical methods | Data processing methods |
-|-------|-------|-------|-------|-------|-------|------|-------|-------|-------|
-| [S06](https://github.com/nvs-vocabs/S06/) | [S07](https://github.com/nvs-vocabs/S07/) | [S27](https://github.com/nvs-vocabs/S27/) | [S25](https://github.com/nvs-vocabs/S25/) |[S29](https://github.com/nvs-vocabs/S29/)|[S02](https://github.com/nvs-vocabs/S02/) | [S26](https://github.com/nvs-vocabs/S26/) | [S03](https://github.com/nvs-vocabs/S23/)| [S04](https://github.com/nvs-vocabs/S04/)|[S05](https://github.com/nvs-vocabs/S05/)|
+Link type | Properties | Statistical terms | Chemical entities | Biological entities | Physical entities | Measurement-matrix relationships | Matrices | Sample preparation methods | Analytical methods | Data processing methods |
+-------|-------|-------|-------|-------|-------|-------|------|-------|-------|-------|
+GitHub repo | [S06](https://github.com/nvs-vocabs/S06/) | [S07](https://github.com/nvs-vocabs/S07/) | [S27](https://github.com/nvs-vocabs/S27/) | [S25](https://github.com/nvs-vocabs/S25/) |[S29](https://github.com/nvs-vocabs/S29/)|[S02](https://github.com/nvs-vocabs/S02/) | [S26](https://github.com/nvs-vocabs/S26/) | [S03](https://github.com/nvs-vocabs/S23/)| [S04](https://github.com/nvs-vocabs/S04/)|[S05](https://github.com/nvs-vocabs/S05/)
+NVS UI | [S06](https://vocab.nerc.ac.uk/collection/S06/) | [S07](https://vocab.nerc.ac.uk/collection/S07/) | [S27](https://vocab.nerc.ac.uk/collection/S27/) | [S25](https://vocab.nerc.ac.uk/collection/S25/) |[S29](https://vocab.nerc.ac.uk/collection/S29/)|[S02](https://vocab.nerc.ac.uk/collection/S02/) | [S26](https://vocab.nerc.ac.uk/collection/S26/) | [S03](https://vocab.nerc.ac.uk/collection/S23/)| [S04](https://vocab.nerc.ac.uk/collection/S04/)|[S05](https://vocab.nerc.ac.uk/collection/S05/)
+Advanced search UI | [S06](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/S06/) | [S07](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/S07/) | [S27](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/S27/) | [S25](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/S25/) |[S29](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/S29/)|[S02](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/S02/) | [S26](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/S26/) | [S03](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/S23/)| [S04](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/S04/)|[S05](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/S05/)
