@@ -14,7 +14,7 @@ One important feature of the BODC PUV is that it is based on a **semantic model*
 
 ## How can I access it?
 
-The P01 PUV is a very large collection containing over 40,000 terms. It can be accessed via the NERC Vocabulary Server (NVS) [here](http://vocab.nerc.ac.uk/collection/P01) and  it can be searched or browsed using the following tools
+The P01 PUV is a very large collection containing over 40,000 terms. It can be accessed via the NERC Vocabulary Server (NVS) [here](http://vocab.nerc.ac.uk/collection/P01) (this will take a few seconds to load) and it can be searched or browsed using the following tools
 
 - [The BODC Vocabulary Search Interface](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P01/)
 
