@@ -24,7 +24,7 @@ The P01 PUV is a very large collection containing over 40,000 terms. It can be s
 
 It can be downloaded in its entirety (i.e. including deprecated concepts) as an [RDF file](http://vocab.nerc.ac.uk/collection/P01). The file also contains links between P01 concepts and concepts from other semantic resources including the semantic elements used to construct the preferred label, units of measurements from BODC's units of measurement vocabulary (P06), broader discovery terms from the SeaDataNet Parameter Discovery Vocabulary (P02) and, when needed, concepts from other related semantic resources. At the time of writing, some 300,000 mappings are present in the file.
 
-For users with knowledge of SPARQL, the P01 and its mappings can also be searched via the [NVS SPARQL endpoint](vocab.nerc.ac.uk/sparql/).
+For users with knowledge of SPARQL, the P01 and its mappings can also be searched via the [NVS SPARQL endpoint](https://vocab.nerc.ac.uk/sparql/).
 
 ## How can I find P01 codes for my data?
 
