@@ -1,6 +1,6 @@
 name: New P01 parameter code request modelled using I-ADOPT
 description: Template to request a new P01 based on basic I-ADOPT decomposition
-title: 'NRT: '
+title: 'NTR: '
 labels: []
 assignees: []
 
@@ -10,7 +10,7 @@ body:
     attributes:
       label: Describe the parameter code you need
       description: >
-        A clear and concise description of the variable you want to add to the P01 Parameter Usage Vocabulary.
+        A clear and concise description of the variable you want to add to the [P01](https://vocab.nerc.ac.uk/search_nvs/P01/) Parameter Usage Vocabulary.
         Provide links to related information (e.g. a scientific publication using or describing the concept) if possible.
     validations:
       required: true
@@ -20,9 +20,9 @@ body:
     attributes:
       label: Expected units of measure or vector dimensions
       description: >
-        Please use free text or provide a link to a concept from a controlled vocabulary, e.g. from NVS
-        [P24 - Units of measure dimensions](https://vocab.nerc.ac.uk/search_nvs/P24/) or
-        [P06 - Measurement units](https://vocab.nerc.ac.uk/search_nvs/P06/) collections,
+        Please use free text or provide a link to a concept from a controlled vocabulary, e.g. URI from NVS
+        [P24 - units of measure dimensions](https://vocab.nerc.ac.uk/search_nvs/P24/) or
+        [P06 - measurement units](https://vocab.nerc.ac.uk/search_nvs/P06/) collections,
         or [QUDT units](https://www.qudt.org/doc/DOC_VOCAB-UNITS.html).
     validations:
       required: false
@@ -32,9 +32,9 @@ body:
     attributes:
       label: Property kind
       description: >
-        Please use free text or provide a link to a concept from a controlled vocabulary, e.g.
-        [S06 - Property](https://vocab.nerc.ac.uk/search_nvs/S06/) from BODC NVS,
-        or [QUDT Quantity kinds](https://www.qudt.org/doc/DOC_VOCAB-QUANTITY-KINDS.html).
+        Please use free text or provide a link to a concept from a controlled vocabulary, e.g. URI from NVS
+        [S06 - Property](https://vocab.nerc.ac.uk/search_nvs/S06/),
+        or [QUDT quantity kinds](https://www.qudt.org/doc/DOC_VOCAB-QUANTITY-KINDS.html).
     validations:
       required: false
 
@@ -43,12 +43,12 @@ body:
     attributes:
       label: Primary object of interest (i.e. a chemical, biological, or physical entity)
       description: >
-        Please use free text or provide a link to a concept from a controlled vocabulary, e.g. from NVS
+        Please use free text or provide a link to a concept from a controlled vocabulary, e.g. URI from NVS
         [S26 - Matrices](https://vocab.nerc.ac.uk/search_nvs/S26/),
         [S27 - Chemical substances](https://vocab.nerc.ac.uk/search_nvs/S27/),
         [S18 - Physical entity names](https://vocab.nerc.ac.uk/search_nvs/S18/),
-        [S29 - Physical entity compounds](https://vocab.nerc.ac.uk/search_nvs/S29/),
-        [S25 - Biological entity names](https://vocab.nerc.ac.uk/search_nvs/S25/) collections or other resources:
+        [S29 - Physical entity compounds](https://vocab.nerc.ac.uk/search_nvs/S29/), or
+        [S25 - Biological entity names](https://vocab.nerc.ac.uk/search_nvs/S25/) collections, or other resources, e.g.
         [EnvO - Environmental](http://www.ebi.ac.uk/ols4/ontologies/envo).
     validations:
       required: false
@@ -59,9 +59,9 @@ body:
       label: Matrix definition
       description: >
         Would we need to define a matrix? If so, what should it be? 
-        Please use free text or provide a link to a concept from a controlled vocabulary, e.g. from NVS
-        [S21](https://vocab.nerc.ac.uk/search_nvs/S21/),
+        Please use free text or provide a link to a concept from a controlled vocabulary, e.g. URI from NVS,
+        [S21](https://vocab.nerc.ac.uk/search_nvs/S21/) or
         [S26](https://vocab.nerc.ac.uk/search_nvs/S26/) collections,
-        EnvO, or other resources.
+        [EnvO](http://www.ebi.ac.uk/ols4/ontologies/envo), or other resources.
     validations:
       required: false
