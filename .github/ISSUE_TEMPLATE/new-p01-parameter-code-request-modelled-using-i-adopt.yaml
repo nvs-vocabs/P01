@@ -1,0 +1,67 @@
+name: New P01 parameter code request modelled using I-ADOPT
+description: Template to request a new P01 based on basic I-ADOPT decomposition
+title: ''
+labels: []
+assignees: []
+
+body:
+  - type: textarea
+    id: parameter-description
+    attributes:
+      label: Describe the parameter code you need
+      description: >
+        A clear and concise description of the variable you want to add to the P01 Parameter Usage Vocabulary.
+        Provide links to related information (e.g. a scientific publication using or describing the concept) if possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-units
+    attributes:
+      label: Expected units of measure or vector dimensions
+      description: >
+        Please use free text or provide a link to a concept from a controlled vocabulary, e.g. from NVS
+        [P24 - Units of measure dimensions](https://vocab.nerc.ac.uk/search_nvs/P24/) or
+        [P06 - Measurement units](https://vocab.nerc.ac.uk/search_nvs/P06/) collections,
+        or [QUDT units](https://www.qudt.org/doc/DOC_VOCAB-UNITS.html).
+    validations:
+      required: false
+
+  - type: textarea
+    id: property-kind
+    attributes:
+      label: Property kind
+      description: >
+        Please use free text or provide a link to a concept from a controlled vocabulary, e.g.
+        [S06 - Property](https://vocab.nerc.ac.uk/search_nvs/S06/) from BODC NVS,
+        or [QUDT Quantity kinds](https://www.qudt.org/doc/DOC_VOCAB-QUANTITY-KINDS.html).
+    validations:
+      required: false
+
+  - type: textarea
+    id: object-of-interest
+    attributes:
+      label: Primary object of interest (i.e. a chemical, biological, or physical entity)
+      description: >
+        Please use free text or provide a link to a concept from a controlled vocabulary, e.g. from NVS
+        [S26 - Matrices](https://vocab.nerc.ac.uk/search_nvs/S26/),
+        [S27 - Chemical substances](https://vocab.nerc.ac.uk/search_nvs/S27/),
+        [S18 - Physical entity names](https://vocab.nerc.ac.uk/search_nvs/S18/),
+        [S29 - Physical entity compounds](https://vocab.nerc.ac.uk/search_nvs/S29/),
+        [S25 - Biological entity names](https://vocab.nerc.ac.uk/search_nvs/S25/) collections or other resources:
+        [EnvO - Environmental](http://www.ebi.ac.uk/ols4/ontologies/envo).
+    validations:
+      required: false
+
+  - type: textarea
+    id: matrix
+    attributes:
+      label: Matrix definition
+      description: >
+        Would we need to define a matrix? If so, what should it be? 
+        Please use free text or provide a link to a concept from a controlled vocabulary, e.g. from NVS
+        [S21](https://vocab.nerc.ac.uk/search_nvs/S21/),
+        [S26](https://vocab.nerc.ac.uk/search_nvs/S26/) collections,
+        EnvO, or other resources.
+    validations:
+      required: false
