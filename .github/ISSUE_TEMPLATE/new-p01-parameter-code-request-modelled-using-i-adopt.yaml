@@ -85,7 +85,7 @@ body:
             and a brief indication of how or where it will be used. e.g.,  
             EMODnet Chemistry – dataset submission to SeaDataNet;  
             DTO-BioFlow – data submission to OBIS;  
-            LandSeaLOT - new parameters for River data workflow
+            LandSeaLOT - new parameter(s) for river data workflow
       
   - type: input
     id: orcid
