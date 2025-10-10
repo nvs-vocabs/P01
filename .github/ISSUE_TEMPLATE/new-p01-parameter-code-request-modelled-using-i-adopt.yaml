@@ -65,3 +65,31 @@ body:
         [EnvO](http://www.ebi.ac.uk/ols4/ontologies/envo), or other resources.
     validations:
       required: false
+
+  - type: markdown
+    attributes:
+      value: "## Optional"
+
+  - type: textarea
+    id: mapping
+    attributes:
+      label: "Mapping to external terminologies"
+      description: "If your submission relates to existing terms in external resources, please enter one or a list of URIs"
+
+  - type: input
+    id: term-utilisation
+    attributes:
+      label: "Term utilisation"
+      description: |
+            Please provide the project, activity, or context associated with this request, 
+            and a brief indication of how or where it will be used. e.g.,  
+            EMODnet Chemistry – dataset submission to SeaDataNet;  
+            DTO-BioFlow – data submission to OBIS;  
+            LandSeaLOT: new parameters for River data workflow
+      
+  - type: input
+    id: orcid
+    attributes:
+      label: "ORCID"
+      description: "Optionally provide your ORCID identifier"
+      placeholder: "0000-0000-0000-0000"
