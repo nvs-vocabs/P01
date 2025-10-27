@@ -24,7 +24,7 @@ The P01 PUV is a very large collection containing over 40,000 terms. It can be a
 
 - [The SeaDataNet parameter thesaurus](http://seadatanet.maris2.nl/v_bodc_vocab_v2/vocab_relations.asp?lib=P08)
 
-Each P01 concept is mapped to the semantic elements used to construct the preferred label (see below) as well as a unit of measurement from the BODC's units of measurement vocabulary (P06), a broader discovery term from the SeaDataNet Parameter Discovery Vocabulary (P02) and, when applicable, concepts from other related semantic resources.
+Each P01 concept is mapped to the semantic elements used to construct the preferred label (see below) as well as a suggested unit of measurement from the BODC's units of measurement vocabulary (P06), a broader discovery term from the SeaDataNet Parameter Discovery Vocabulary (P02) and, when applicable, concepts from other related semantic resources. Users should be aware that units of measurements must always be specified separately from the P01 code and the reported units can be different from the units suggested in the NVS.
 
 For users with knowledge of SPARQL, the P01 and its mappings can also be searched via the [NVS SPARQL endpoint](https://vocab.nerc.ac.uk/sparql/).
 
